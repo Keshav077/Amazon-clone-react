@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useProducts } from '../contexts/ProductsProvider';
 
 function Header({ isHome }) {
-  const { categories, loading, cart, getCartItemCount } = useProducts();
+  const { categories, loading, getCartItemCount } = useProducts();
 
   return (
     <header className="">

@@ -66,7 +66,7 @@ function Product() {
             {product.rating.toFixed(1)}⭐ |{' '}
             <span className="font-normal ">{product.stock} reviews</span>
           </div>
-          <div className="border border-2 m-2"></div>
+          <div className="border  m-2"></div>
           <div className="text-3xl font-thin text-red-500">
             -{product.discountPercentage}%{' '}
             <span className="font-medium text-black">${product.price}</span>

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useProducts } from '../contexts/ProductsProvider';
 import Header from '../components/Header';
 
