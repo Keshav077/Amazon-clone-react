@@ -59,15 +59,20 @@ function Header({ isHome }) {
             <option className="px-2 " id={'all'} key={'all'}>
               All
             </option>
-            {categories?.map(category => (
-              <option className="px-2 " id={category} key={category}>
-                {category}
+            {categories?.map((obj, index) => (
+              <option className="px-2 " id={obj['name']} key={index}>
+                {obj['name']}
               </option>
             ))}
           </select>
-          {categories?.map(str => (
-            <Link className="px-2 " id={str} key={str} to={'/category/' + str}>
-              {str.charAt(0).toUpperCase() + str.slice(1)}
+          {categories?.map((obj, index) => (
+            <Link
+              className="px-2 "
+              id={obj['name']}
+              key={index}
+              to={'/category/' + obj['slug']}
+            >
+              {obj['name']}
             </Link>
           ))}
         </div>

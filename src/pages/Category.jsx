@@ -51,7 +51,11 @@ function Category() {
         </div>
         <div className="col-span-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 p-2 overflow-y-scroll">
           {products?.map(product => (
-            <Card title={product.title} products={[product]}></Card>
+            <Card
+              title={product.title}
+              key={product.id}
+              products={[product]}
+            ></Card>
           ))}
         </div>
       </div>

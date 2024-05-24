@@ -7,7 +7,7 @@ function CardSlider({ products, title }) {
       <div className="flex overflow-x-auto ">
         {products?.map(product => {
           return (
-            <Link to={'/product/' + product.id}>
+            <Link to={'/product/' + product.id} key={product.id}>
               <div className=" min-w-48 h-full object-contain mx-2 shadow-sm">
                 <img
                   src={product.thumbnail}
